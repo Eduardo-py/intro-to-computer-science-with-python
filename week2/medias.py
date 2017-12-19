@@ -4,7 +4,7 @@ notas = []
 soma = 0.0
 
 for i in range(0, 4): 
-	nota = input('Digite a %s nota: ' % posicoes[i])
+	nota = float(input('Digite a %s nota: ' % posicoes[i]))
 	notas.append(nota)
 	soma = soma + notas[i]
 
