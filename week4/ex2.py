@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 n = int(input("Digite o valor de n:"))
 impar = 1
 i = 1
