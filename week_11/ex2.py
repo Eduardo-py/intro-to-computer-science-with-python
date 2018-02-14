@@ -3,13 +3,6 @@ import string
 import sys
 import unicodedata
 
-def maiusculas(a_string):
-    uppers = ""
-    for c in a_string:
-        if c in string.ascii_uppercase:
-            uppers = uppers + c
-    return uppers
-
 def menor_nome(names_array):
     
     if len(names_array) > 0:
@@ -25,15 +18,8 @@ def menor_nome(names_array):
             if value < minimum:
                 minimum = value
                 index = i
-        print(sizes)
         return names_array[index].capitalize()
     else:
         return ""
 
-print(maiusculas('Programamos em python 2?'))
-# deve devolver 'P'
-print(maiusculas('Programamos em Python 3.'))
-# deve devolver 'PP'
-print(maiusculas('PrOgRaMaMoS em python!'))
-# deve devolver 'PORMMS'
 print(menor_nome(['maria', 'josé', 'PAULO', 'Catarina']))
