@@ -1,10 +1,10 @@
 def busca(lista, elemento):
-      
+
     first = 0
     last = len(lista) - 1
 
     while first <= last:
-        i = (first + last) / 2
+        i = int((first + last) / 2)
 
         if lista[i] == elemento:
             return i
